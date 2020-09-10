@@ -9,7 +9,7 @@
 
 
 ### Spotify Playing 🎧
-[<img src="https://now-playing-codestackr.vercel.app/api/spotify-playing" alt="David Saint Spotify Playing" width="350" />](https://open.spotify.com/user/ztubwqe0b1e3upwsvamo3y1nf)
+[<img src="https://https://novatorem-git-master.david-saint.vercel.app/api/spotify" alt="David Saint Spotify Playing" width="350" />](https://open.spotify.com/user/ztubwqe0b1e3upwsvamo3y1nf)
 
 ### Connect with me:
 
