@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on a couple of top secret things 🤫
+- 🔭 I’m currently working on a couple top secret things 🤫
 - 🌱 I’m currently learning GoLang and I'm loving it
 - 👯 I’m looking to collaborate on absolutely anything
 - 📫 How to reach me: <a href="mailto:david@davidsaint.dev">Email</a>
