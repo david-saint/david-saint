@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.svg" width="250px" alt="Cloo Logo" />
+  <img src="logo.svg" width="300px" alt="david saint logo" />
 </p>
 
 [website]: https://davidsaint.dev
