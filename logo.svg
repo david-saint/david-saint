@@ -1,0 +1,23 @@
+<svg viewBox="0 0 300 300" class="w-full h-full overflow-visible gooey-container" id="logo-svg">
+<g id="logo-group" style="transform-origin: center; transform: rotate(var(--rotation)); transition: transform 0.5s ease;">
+<!--  Letter D  -->
+<!--  Constructed of a Stem (Rect/Pill) and a Bowl (Circle)  -->
+<g class="letter-wrapper" id="letter-d" style="transform: translateX(calc(var(--letter-spacing) * -1));">
+<!--  Stem  -->
+<rect x="70" y="50" width="50" height="200" rx="25" class="ds-shape animate-float" style="animation-play-state: running; stroke: none; stroke-width: 2;"/>
+<!--  Bowl  -->
+<circle cx="95" cy="200" r="55" class="ds-shape animate-float-delayed" style="animation-play-state: running; stroke: none; stroke-width: 2;"/>
+</g>
+<!--  Letter S  -->
+<!--  Constructed of two circles and a connecting diagonal, or a path.  -->
+<!--  Let's use shapes to maximize the "gooey" merging effect  -->
+<g class="letter-wrapper" id="letter-s" style="transform: translateX(var(--letter-spacing));">
+<!--  Top Circle  -->
+<circle cx="210" cy="90" r="50" class="ds-secondary animate-float-delayed" style="animation-play-state: running; stroke: none; stroke-width: 2;"/>
+<!--  Bottom Circle  -->
+<circle cx="210" cy="210" r="55" class="ds-secondary animate-float" style="animation-play-state: running; stroke: none; stroke-width: 2;"/>
+<!--  Connecting Spine (Rotated Pill)  -->
+<rect x="185" y="90" width="50" height="120" rx="25" transform="rotate(-15 210 150)" class="ds-secondary animate-float" style="animation-play-state: running; stroke: none; stroke-width: 2;"/>
+</g>
+</g>
+</svg>
