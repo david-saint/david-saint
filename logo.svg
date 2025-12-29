@@ -1,34 +1,61 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="w-full h-full gooey-container overflow-visible" id="logo-svg" viewBox="0 0 300 300"><style xmlns="http://www.w3.org/1999/xhtml">
-                .gooey-container { filter: url('#goo'); }
-            </style><defs id="global-defs">
-<filter id="goo">
-<!-- Blur the shapes -->
-<feGaussianBlur id="svg-blur" in="SourceGraphic" result="blur" stdDeviation="10"/>
-<!-- High contrast to sharpen the blur edges, creating liquid effect -->
-<feColorMatrix id="svg-contrast" in="blur" mode="matrix" result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"/>
-<!-- Composite to keep colors true if needed, or just output goo -->
-<feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-</filter>
-</defs>
-<g id="logo-group" style="transform-origin: center center; transform: rotate(-15deg); transition: transform 0.5s;">
-<!-- Letter D -->
-<!-- Constructed of a Stem (Rect/Pill) and a Bowl (Circle) -->
-<g class="letter-wrapper" id="letter-d" style="transform: translateX(0px);">
-<!-- Stem -->
-<rect class="animate-float" height="200" rx="25" width="50" x="70" y="50" style="fill: rgb(42, 42, 42); transition: none;"/>
-<!-- Bowl -->
-<circle class="animate-float-delayed" cx="95" cy="200" r="55" style="fill: rgb(42, 42, 42); transition: none;"/>
-</g>
-<!-- Letter S -->
-<!-- Constructed of two circles and a connecting diagonal, or a path. -->
-<!-- Let's use shapes to maximize the "gooey" merging effect -->
-<g class="letter-wrapper" id="letter-s" style="transform: translateX(0px);">
-<!-- Top Circle -->
-<circle class="animate-float-delayed" cx="210" cy="90" r="50" style="fill: rgb(194, 118, 100); transition: none;"/>
-<!-- Bottom Circle -->
-<circle class="animate-float" cx="210" cy="210" r="55" style="fill: rgb(194, 118, 100); transition: none;"/>
-<!-- Connecting Spine (Rotated Pill) -->
-<rect class="animate-float" height="120" rx="25" transform="rotate(-15 210 150)" width="50" x="185" y="90" style="fill: rgb(194, 118, 100); transition: none;"/>
-</g>
-</g>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="logo-svg" class="w-full h-full gooey-container overflow-visible" viewBox="0 0 300 300">
+  <defs id="global-defs">
+    <filter id="goo">
+      <!-- Blur the shapes -->
+      <feGaussianBlur id="svg-blur" in="SourceGraphic" stdDeviation="10" result="blur" />
+      <!-- High contrast to sharpen the blur edges, creating liquid effect -->
+      <feColorMatrix id="svg-contrast" in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <!-- Composite to keep colors true if needed, or just output goo -->
+      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+    </filter>
+  </defs>
+  <style xmlns="http://www.w3.org/1999/xhtml">
+    /* Embedded Styles for Portability */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .ds-shape {
+      fill: #2A2A2A;
+    }
+
+    .ds-secondary {
+      fill: #C27664;
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+      animation-play-state: running;
+    }
+
+    .animate-float-delayed {
+      animation: float 6s ease-in-out 3s infinite;
+      animation-play-state: running;
+    }
+
+    .gooey-container {
+      filter: url('#goo');
+    }
+  </style>
+  <g id="logo-group" style="transform-origin: center center; transform: rotate(-17deg); transition: none;">
+    <!-- Letter D -->
+    <g id="letter-d" class="letter-wrapper" style="transform: translateX(0px); transition: none;">
+      <rect x="70" y="50" width="50" height="200" rx="25" class="ds-shape animate-float" />
+      <circle cx="95" cy="200" r="55" class="ds-shape animate-float-delayed" />
+    </g>
+    <!-- Letter S -->
+    <g id="letter-s" class="letter-wrapper" style="transform: translateX(0px); transition: none;">
+      <circle cx="210" cy="90" r="50" class="ds-secondary animate-float-delayed" />
+      <circle cx="210" cy="210" r="55" class="ds-secondary animate-float" />
+      <rect x="185" y="90" width="50" height="120" rx="25" transform="rotate(-15 210 150)" class="ds-secondary animate-float" />
+    </g>
+  </g>
 </svg>
