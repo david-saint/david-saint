@@ -32,7 +32,7 @@
     .active {
       fill: var(--color-calendar-graph-day-bg);
       stroke: var(--color-calendar-graph-day-border);
-      animation: fade-in 0.8s forwards;
+      animation: fade-in 1.8s infinite forwards;
     }
 
     @keyframes fade-in {
